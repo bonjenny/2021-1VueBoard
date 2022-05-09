@@ -1,0 +1,47 @@
+git init				: 깃 시작
+cd [경로]				: 폴더 위치 이동
+git status 				: 현재 파일들의 상태 확인
+git add [파일 이름]			: commit할 파일 추가 ([파일 이름] : . or git.css)
+git rm [파일 이름]			: commit할 파일 삭제
+git config --global user.email [이메일]	: 이메일로 로그인
+git config --global user.name [이름]	: 이름으로 로그인
+git config --global credential.helper 'store --file [경로]'	: 비밀번호 저장된 파일 생성
+git config --list			: name과 email 잘 들어갔는지 확인
+git commit -m [설명 메시지]		: commit
+git commit -am [설명]			: add와 commit 동시에
+git log					: commit된 내역 확인
+
+git remote add origin https://github.com/[githubID]/gitExample
+					: origin으로 원격 저장소 주소 등록
+git remote remove origin		: origin이라는 원격 저장소 삭제
+git push origin master			: origin에 master(branch commit saved)를 push
+git pull origin master			: origin의 내용이 master로 복사됨
+git pull --rebase origin master		: origin과 현재 로컬 저장소 동기화
+git pull origin master --allow-unrelated-histories : 관련없는 저장소라도 pull
+git clone [저장소 주소]			: 클라이언트 상에 아무것도 없을 때 서버 프로젝트 다운
+
+git diff				: 수정된 파일에서 달라진 부분 확인
+git checkout [파일 이름]		: modified file을 unmodified file로
+git reset [파일 이름]			: staged file을 (before commit) modified file로
+git reset --soft [파일 이름]		: (after commit) unmodified file을 (before commit) staged file로
+git reset --mixed [파일 이름]		: (after commit) unmodified file을 (before commit) modified file로git
+git reset --hard [파일 이름]		: (after commit) unmodified file을 (before commit) unmodified file로
+git reset HEAD~1			: commit 1개 전으로 되돌리기
+git revert	 HEAD			: 이전 commit 내용을 새 commit으로 저장 (⇒:wq)
+
+git branch [브랜치 이름]		: 새로운 branch 생성
+git branch -d [브랜치 이름]		: branch 삭제
+git branch				: git의 branch 확인
+git checkout [브랜치 이름]		: branch 간 전환
+git merge [브랜치 이름]			: 현재 HEAD(master)에 브랜치를 합해 새로운 커밋 생성
+git merge feature			: merge 중 충돌부분 확인
+git rebase [브랜치 이름]		: 현재 HEAD(master)에 브랜치를 합병
+
+git cherry-pick [commit명]		: 다른 branch의 커밋을 골라 현재 브랜치에 합병
+git tag -d [태그명]			: 커밋에 태깅
+git fetch				: 서버의 변경점을 별개의 브랜치로 만듦
+git shortlog				: commit 메시지 로그 확인
+git stash				: 현재 변경점 저장
+git stash apply				: 저장한 stash 복구
+
+https://www.zerocho.com/category/Git/post/5838c650497729001897a340
