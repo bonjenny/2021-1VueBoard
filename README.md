@@ -1,4 +1,7 @@
-## 시작 2021.3.30. ~ ing
+# 시작 2021.3.30. ~ ing
+### Project COCODAS from [winn-er](https://github.com/winn-er)
+
+![Cocodas](./cocodas.png)
 - 참고1: Vuejs로 게시판 만들기, 개린이르라나
 - 참고링크1: https://youtu.be/s1lXVr65KZg
 - 참고2: node.js로 서버 만들기, 개린이르라나
